@@ -1,35 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Domain Consulting — Own the First Word Your Customers See</title>
+  <meta name="description" content="Prime Domain Consulting helps you secure memorable, brand‑aligned domains and put them to work fast: redirects, landing pages with contact forms, and campaign links.">
+  <meta name="theme-color" content="#0e2a47">
+  <link rel="icon" href="assets/icon.png" sizes="any">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <meta property="og:title" content="Prime Domain Consulting">
+  <meta property="og:description" content="Own the first word your customers see. Premium domain discovery, acquisition and launch.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.primedomainconsulting.com/">
+  <style>
+    :root{
+      --navy:#0e2a47;
+      --gold:#c5a13c;
+      --cream:#f3eee7;
+      --ink:#0f172a;
+      --ink-2:#334155;
+      --muted:#6b7280;
+      --success:#10b981;
+      --shadow: 0 10px 30px rgba(14,42,71,.12);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;line-height:1.6;color:var(--ink);background:var(--cream)}
+    .container{max-width:1120px;margin-inline:auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(243,238,231,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid rgba(14,42,71,.07)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+    .brand img{height:42px;width:auto;border-radius:8px}
+    .brand span{font-weight:800;letter-spacing:.3px;color:var(--navy)}
+    .navlinks a{margin-left:18px;text-decoration:none;color:var(--ink-2);font-weight:600}
+    .btn{display:inline-block;background:var(--navy);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:var(--shadow)}
+    .btn--ghost{background:#fff;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{padding:72px 0 40px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+    h1{font-size:clamp(32px,5vw,48px);line-height:1.15;margin:0 0 12px;color:var(--navy)}
+    .lead{font-size:clamp(16px,2.5vw,20px);color:var(--ink-2);margin-bottom:22px}
+    .quote{font-size:20px;color:var(--navy);font-weight:800;margin:20px 0 28px}
+    .pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(14,42,71,.12);border-radius:999px;padding:8px 12px;font-weight:700}
+    .list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .list li::before{content:"✓";color:var(--success);font-weight:900;margin-top:1px}
+    section{padding:56px 0}
+    section h2{font-size:clamp(24px,3.5vw,34px);margin:0 0 16px;color:var(--navy)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .grid.cols-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .badge{display:inline-block;background:rgba(197,161,60,.12);color:var(--navy);border:1px solid rgba(197,161,60,.35);padding:6px 10px;border-radius:999px;font-weight:700}
+    footer{padding:40px 0;color:var(--muted)}
+    .small{font-size:14px;color:var(--muted)}
+    .faq details{background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+    .faq summary{font-weight:700;cursor:pointer;color:var(--navy)}
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr} .navlinks{display:none}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Prime Domain Consulting",
+    "url": "https://www.primedomainconsulting.com/",
+    "logo": "https://www.primedomainconsulting.com/assets/logo.png",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
-    <h1>Welcome to My Simple HTML Page</h1>
-    <p>This is a basic HTML page with some styling.</p>
-    <p>Feel free to modify the content and styles as you wish!</p>
-    <p>Enjoy coding!</p>
-</body>
-<script>
-    console.log("Page loaded successfully!");
-</script>
-<footer>
-    <p>&copy; 2023 My Simple HTML Page</p>
-</footer>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#top">
+        <img src="assets/icon.png" alt="Prime Domain Consulting logo">
+        <span>Prime Domain Consulting</span>
+      </a>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#usecases">Use cases</a>
+        <a href="#why">Why Domains</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--ghost" href="mailto:contact@primedomainconsulting.com">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">🚀 Boost your online presence</span>
+        <h1>Own the first word your customers see.</h1>
+        <p class="lead">
+          Your domain is your brand’s front door. We help you find, acquire and put it to work—
+          from smart redirects to fast landing pages with contact capture—so you stand out and get
+          contacted sooner.
+        </p>
+        <p class="quote">“A great domain makes every ad cheaper, every click warmer, and every sale easier.”</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn--ghost" href="#usecases">See smart uses</a>
+          <a class="btn" href="mailto:contact.sajed@primedomainconsulting.com">Contact us</a>
+        </div>
+        <ul class="list" style="margin-top:18px">
+          <li>Premium domain discovery &amp; brand-name strategy</li>
+          <li>Acquisition &amp; brokerage with escrow guidance</li>
+          <li>Launch-ready landing pages (with contact form)</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card" style="text-align:center">
+          <img src="assets/logo.png" alt="Prime Domain Consulting full logo" style="max-width:100%;height:auto;border-radius:14px">
+          <p class="small" style="margin-top:12px">We turn <strong>ideas</strong> into <strong>addresses</strong> people trust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>What we do</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <span class="badge">Discovery</span>
+          <h3>Domain Research &amp; Name Strategy</h3>
+          <p>Short, memorable, on-brand names with strong availability signals. We evaluate trademarks, SEO, and type-in value.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Acquisition</span>
+          <h3>Negotiation &amp; Brokerage</h3>
+          <p>We contact owners, negotiate pricing, and handle escrow safely—so you get the name you want at the right price.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Launch</span>
+          <h3>Website &amp; Landing Pages</h3>
+          <p>We deploy fast static pages (GitHub Pages/Netlify) and wire a simple contact form so prospects can reach you instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="usecases" style="background:#fff">
+    <div class="container">
+      <h2>Smart ways to use your domain today</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Instant redirect</h3>
+          <p>Point your new domain to your current website, store page, or even LinkedIn/Google Business profile. Share one clean link everywhere.</p>
+          <ul class="list">
+            <li>Change the destination anytime</li>
+            <li>Perfect for ads, bios, and QR codes</li>
+            <li>Consistent brand across channels</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Landing page with contact form</h3>
+          <p>No full website yet? Launch a simple page in hours that explains your offer and captures inquiries directly to your inbox.</p>
+          <ul class="list">
+            <li>Clear value proposition + branding</li>
+            <li>Contact form routed to your email</li>
+            <li>Link out to socials or product pages</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Campaign &amp; QR links</h3>
+          <p>Create memorable paths or subdomains for ads and print: <code>/offer</code>, <code>/book</code>, or <code>go.yourdomain.com</code>. Easier to type, easier to track.</p>
+          <ul class="list">
+            <li>Better ad CTR and recall</li>
+            <li>Simple analytics &amp; UTM tracking</li>
+            <li>Great for flyers, billboards, events</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stand out from competitors</h3>
+          <p>A short, memorable name makes you look established and premium. Customers notice—and they click the brand that’s easiest to remember.</p>
+          <ul class="list">
+            <li>Sharper first impression</li>
+            <li>Fewer typos and lost traffic</li>
+            <li>Own your brand’s namespace</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="container">
+      <h2>Why your domain matters</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Credibility &amp; trust</h3>
+          <p>The right domain instantly signals professionalism and legitimacy. It makes customers comfortable to click and to buy.</p>
+          <ul class="list">
+            <li>Brand consistency across web &amp; ads</li>
+            <li>Memorability that compounds word-of-mouth</li>
+            <li>Higher ad CTR and conversion</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Findability &amp; control</h3>
+          <p>Search engines and people reward clarity. With simple redirects and landing pages, you control the journey from click to contact.</p>
+          <ul class="list">
+            <li>SEO signals &amp; direct type-in traffic</li>
+            <li>Single link you can update anytime</li>
+            <li>Cleaner, more trustworthy URLs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq" style="background:#fff">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="grid cols-2">
+        <details open class="card">
+          <summary>Can you acquire a domain that’s already owned?</summary>
+          <p>Yes. We contact the owner, negotiate on your behalf, and complete a secure transfer via a trusted escrow service.</p>
+        </details>
+        <details class="card">
+          <summary>Do you build the initial site?</summary>
+          <p>We can ship a fast, simple landing page with a contact form so prospects can reach you immediately.</p>
+        </details>
+        <details class="card">
+          <summary>How do redirects work?</summary>
+          <p>We point your domain to any destination you choose (website, store, profile). You can change it later without changing your printed links.</p>
+        </details>
+        <details class="card">
+          <summary>How fast can we launch?</summary>
+          <p>For available domains, discovery + setup can be done in days. Brokerage timelines depend on the seller’s response.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="lead">Interested in a better domain or a quick landing page? Email us and we’ll get back to you.</p>
+        <p><strong>Email:</strong> <a href="mailto:contact.sajed@primedomainconsulting.com">contact@primedomainconsulting.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="assets/icon.png" alt="" style="height:28px;width:28px;border-radius:6px">
+      <strong>Prime Domain Consulting</strong>
+    </div>
+    <div class="small">© <span id="y"></span> Prime Domain Consulting • All rights reserved</div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
 </html>
